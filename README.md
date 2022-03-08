@@ -34,7 +34,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/Haybuka/dashboard-with-theme.git](github)
-- Live Site URL: [https://dashtheem.netlify.app](netlify)
+- Live Site URL: [https://dashtheem.netlify.app/](netlify)
 
 ## My process
 
