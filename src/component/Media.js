@@ -4,7 +4,6 @@ import Card from './Card'
 import '../styles/Media.css'
 function Media() {
   const followers = useContext(FollowContext)
-  console.log(followers)
   return (
     <aside className='Media'>
        {followers.map((data,id) =>(
