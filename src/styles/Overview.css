@@ -1,0 +1,11 @@
+.Overview{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width:480px){
+    .Overview{
+     display: block;
+    }
+}

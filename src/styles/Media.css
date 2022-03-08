@@ -1,0 +1,14 @@
+.Media{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+@media screen and (max-width:1000px){
+    .Media{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+      }
+}

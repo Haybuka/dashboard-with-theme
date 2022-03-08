@@ -1,0 +1,101 @@
+.Card{
+    /* background-color: red; */
+    padding: 5px 50px;
+    text-align: center;
+    border-radius:5px;
+    transition:  all 0.25s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Card:hover{
+    box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.281);
+}
+.Card-lead{
+    margin: 20px 0;
+}
+.Card-handle{
+    margin: 15px 0 5px 0;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+.Card-handle img{
+    display: inline-block;
+    margin: 0 10px;
+}
+.Card-total{
+    font-size: 50px;
+    margin: 0;
+
+}
+.Card-follow{
+    font-size: 14px;
+    font-weight: normal;
+    margin:0;
+    letter-spacing: 3px;
+}
+
+.Card-today{
+    margin: 5px 0 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Card-today img{
+    margin: 0 5px;
+}
+.Card-facebook,.Card-twitter{
+    border-top: 5px solid hsl(208, 92%, 53%);
+}
+.Card-youtube{
+    border-top: 5px solid hsl(348, 97%, 39%);
+}
+.Card-instagram{
+    position: relative;
+    overflow: hidden;
+}
+.Card-instagram::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5px;
+    width: 100%;
+    background:linear-gradient(to right,hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+}
+
+.light-card{
+    background-color: hsl(227, 47%, 96%) !important;
+    color: #000;
+  }
+  .dark-card{
+    background-color: hsl(228, 28%, 20%);
+    color: #fff;
+  }
+  @media screen and (max-width:1000px){
+    .Card{
+        margin: 10px 0;
+        width: 380px;
+      }
+}
+  @media screen and (max-width:800px){
+    .Card{
+        margin: 10px 0;
+        width: 250px;
+       
+      }
+}
+
+
+@media screen and (max-width:550px){
+    .Card{
+       width: 100%;
+       margin: 20px auto;
+       text-align: center;
+      }
+      .Card-today {
+          font-weight: bold;
+      }
+}

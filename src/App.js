@@ -1,24 +1,19 @@
-import logo from './logo.svg';
+import { useContext } from 'react';
+import Dashboard from './component/Dashboard';
 import './App.css';
-
+import { ThemeContext } from './context/ThemeContext'
+import {FollowContextProvider} from './context/FollowContext'
+import {OverviewProvider} from './context/OverviewContext'
 function App() {
+  const {mode} = useContext(ThemeContext)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+     <FollowContextProvider>
+          <OverviewProvider>
+              <div className={mode ? "App light-bg":"App dark-bg"}>
+                 <Dashboard />
+              </div>
+          </OverviewProvider>
+     </FollowContextProvider>
   );
 }
 

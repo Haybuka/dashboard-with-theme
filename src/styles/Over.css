@@ -1,0 +1,52 @@
+.Overcard{
+        /* background-color: red; */
+        padding: 5px 20px;
+        width: 220px;
+        margin-bottom: 25px;
+        border-radius:5px;
+        transition:  all 0.25s ease-in-out;
+}
+.OverCard-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+.OverCard-head p{
+    margin-right: 10px;
+}
+
+.OverCard-body,.OverCard-body div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+.OverCard-body div img{
+  margin: 0 5px;
+}
+.OverCard-body div img +span{
+  font-size: 14px;
+}
+.OverCard-body p{
+  font-size: 25px;
+  font-weight: bold;
+}
+.light-card{
+    background-color: hsl(227, 47%, 96%) !important;
+    color: #000;
+  }
+  .dark-card{
+    background-color: hsl(228, 28%, 20%);
+    color: #fff;
+  }
+
+  @media screen and (max-width:480px){
+    .Overcard{
+        width: auto;
+        margin: 15px 0;
+      }
+      .OverCard-head{
+          margin-bottom: 25px;
+      }
+}
